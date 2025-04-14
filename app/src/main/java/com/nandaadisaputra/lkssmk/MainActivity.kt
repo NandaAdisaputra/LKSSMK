@@ -1,5 +1,6 @@
 package com.nandaadisaputra.lkssmk
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -36,8 +37,7 @@ class MainActivity : AppCompatActivity() {
             if (user != null) {
                 // Menampilkan pesan jika login berhasil
                 Toast.makeText(this, "Login berhasil! Selamat datang, ${user.name}", Toast.LENGTH_LONG).show()
-                // Pindah ke activity lain jika perlu
-                // startActivity(Intent(this, DashboardActivity::class.java))
+                startActivity(Intent(this, VotingActivity::class.java))
             }
         }
 

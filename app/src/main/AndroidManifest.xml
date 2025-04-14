@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <!-- Mengizinkan penggunaan trafik tanpa enkripsi (misalnya HTTP, bukan HTTPS) -->
     <application
         android:usesCleartextTraffic="true"
         android:allowBackup="true"
@@ -15,6 +15,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LKSSMK"
         tools:targetApi="31">
+
+        <activity android:name=".VotingActivity"
+            android:exported="true"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
